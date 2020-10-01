@@ -1,6 +1,19 @@
 # take input from users
+import sys
 num = int(input("Enter a number: "))
 if (num % 2) == 0:
    print("{0} is Even".format(num))
 else:
    print("{0} is Odd".format(num))
+   
+# Ask user to end a program or not
+end = 2
+while end == 2:
+    end = int(input("Do you want to quit? yes=1/ No=2 "))
+    if end == 1:
+        sys.exit()
+    print (input("Enter a number: "))
+    if (num % 2) == 0:
+        print("{0} is Even".format(num))
+    else:
+        print("{0} is Odd".format(num))
